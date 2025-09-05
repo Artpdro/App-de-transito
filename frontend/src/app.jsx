@@ -1,14 +1,13 @@
 import { useState, useEffect } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, Polyline } from 'react-leaflet'
-import { Button } from '@/components/ui/button.jsx'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
-import { Input } from '@/components/ui/input.jsx'
-import { Label } from '@/components/ui/label.jsx'
-import { Badge } from '@/components/ui/badge.jsx'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs.jsx'
+import { Button } from './components/ui/button.jsx'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card.jsx'
+import { Input } from './components/ui/input.jsx'
+import { Label } from './components/ui/label.jsx'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs.jsx'
 import { Upload, MapPin, Route, BarChart3, AlertTriangle } from 'lucide-react'
 import 'leaflet/dist/leaflet.css'
-import './App.css'
+import './app.css'
 
 // Fix para ícones do Leaflet
 import L from 'leaflet'
@@ -114,8 +113,7 @@ function App() {
     <div className="min-h-screen bg-gray-50 p-4">
       <div className="max-w-7xl mx-auto">
         <header className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Safe Routes</h1>
-          <p className="text-gray-600">Análise e otimização de rotas seguras baseada em dados de acidentes</p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">SafeWay</h1>
         </header>
 
         <Tabs defaultValue="map" className="space-y-6">
